@@ -5,7 +5,7 @@ tags: ['python', 'flask', 'django', 'jinja2template', 'vscode']
 author: ervan kurniawan
 ---
 
-![Thumbnail for blog posting about enabling python code syntax highlighting inside HTML file when working with Flask and Django framework.](https://imgur.com/a/R9sDQuR)
+![Thumbnail for blog posting about enabling python code syntax highlighting inside HTML file when working with Flask and Django framework.](https://i.imgur.com/v28M64A.png)
 
 ## Introduction
 When we talk about web development in Python, we will think about Flask and Django.
