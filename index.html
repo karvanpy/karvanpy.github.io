@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal mini notes website for learning and sharing knowledge.">
+  <meta name="keywords" content="notes, learning, web development, programming, SEO">
+  <meta name="author" content="Your Name">
+  <title>Mini Notes</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Mini Notes</h1>
+    <p>A place to store and share what I learn.</p>
+  </header>
+
+  <main class="container">
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search articles..." oninput="filterArticles()">
+      <select id="category-select" onchange="filterArticles()">
+        <option value="">All Categories</option>
+        <option value="web-dev">Web Development</option>
+        <option value="javascript">JavaScript</option>
+        <option value="css">CSS</option>
+      </select>
+    </div>
+
+    <!-- Articles Grid -->
+    <div class="articles-grid" id="articles-grid">
+      <!-- Dummy Articles -->
+      <article class="article-card" data-category="web-dev">
+        <h2><a href="articles/article-1.html">Understanding HTML Semantics</a></h2>
+        <p>Learn how to use semantic HTML tags to improve accessibility and SEO.</p>
+        <span class="category-tag">Web Development</span>
+      </article>
+      <article class="article-card" data-category="javascript">
+        <h2><a href="articles/article-2.html">JavaScript Closures Explained</a></h2>
+        <p>A deep dive into closures in JavaScript and how they work.</p>
+        <span class="category-tag">JavaScript</span>
+      </article>
+      <article class="article-card" data-category="css">
+        <h2><a href="articles/article-3.html">CSS Grid vs Flexbox</a></h2>
+        <p>When to use CSS Grid and when to use Flexbox for layout design.</p>
+        <span class="category-tag">CSS</span>
+      </article>
+      <!-- Add more dummy articles here -->
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination" id="pagination">
+      <button onclick="prevPage()">Previous</button>
+      <span id="page-number">1</span>
+      <button onclick="nextPage()">Next</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2023 Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
